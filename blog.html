@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+<body class="container mx-auto p-12 ">
+
+  <div class="border p-4">
+    <h1 class="text-5xl">Discuss the scope of var, let, and const</h1>
+
+    <p class="mt-4 text-xl"> To declare variable, we use var,let and const in JavaScript. But their scopes are different. Scope means the accessiblity of variable. 
+
+    <h1 class="text-xl">well, let us know about scopes of var, let and const </h1>
+
+    <h1 class="text-4xl mt-4">var</h1> 
+    <p class="text-2xl mt-2"> Var is globally scopped. This means we can access those variables which are declared with var from anywhere . 
+      
+    The variables we declare with var are hoisted to the top of their containg function. Var is also function scoped which means the variable declared with var are accessible within the function in which they are defined.
+  the value of var can be changed by declaring another var with the same name</p>
+
+    <h1 class="text-4xl mt-4">let</h1>
+    <p class="text-2xl mt-2">When we use let to declare variables they become block scoped. This means we can  access the value of the variable only within the block where they are defined . May be the block is  a loop or a function or a conditional statement. So we can say,  The scope of a let variable is only block scoped. It can't be accessible outside the particular block . Usually let variable has no hoisting issues .  </p>
+    <h1 class="text-4xl mt-4">const</h1>
+
+    <p class="text-2xl mt-2"> const is also  block scoped like let .That means it is also accessible only within the block where it is defined. The variable declared with const can not be reassigned any new value . the value is always constant here. </p>
+
+    <p class="text-3xl mt-4">In modern Java Script we dont usually use var any more. Instead of 'var' we use 'let' and 'const'</p>
+
+  </div>
+
+  <div class="mt-12 border p-4">
+    <h1 class="text-5xl">Tell us the use cases of null and undefined</h1>
+
+    <h1 class="text-4xl mt-8">Null</h1>
+    <p class="text-2xl mt-2">Null is basically an assignment value. The variable which has been assigned as null contains no value and is empty.</p>
+    <h2 class="text-3xl mt-4">Use case of null :</h2>
+    
+      <div class="mt-2 text-2xl">
+        <li>If there is no meaningfull value present in a variable we can assign 'null' to that variable.</li>
+      <li>Null is often used when we want to clear a variable or indicate that it hasn't been assigned a value yet</li>
+      <li>We can use 'null' as a placeholder until we have the actual value to assign</li>
+      <li> When a function doesn't have a valid return . Function can return 'null' to indicate that there is no meaningfull result or value</li>
+      </div>
+   
+
+    <h1 class="text-4xl mt-8">Undefined</h1>
+    <p class="text-2xl mt-2">Undefined is when we declare a variable but do not assign a value to define it, the variable becomes undefined.</p>
+    <h1 class="text-3xl mt-4">Use case of Undefined :</h1>
+    <div class="mt-2 text-2xl">
+      <li>The undefined property indicates that a variable has not been assigned a value, or not declared at all.
+     </li>
+      <li> At the time of calling a function if we dont provide a parameter. The function defaults to 'undefined' . That means 'undefined' can be used to check if value is passed or not </li>
+      <li>If any object properties haven't been set , they are undefined . We can check if a specific property exists on a object</li>
+    </div>
+    
+    
+  </div>
+
+  <div class="mt-12 border p-4">
+    <h1 class=" text-5xl">What do you mean by REST API?</h1>
+    <p class="mt-2 text-2xl"> A REST API is an API that conforms to the design principles of the REST, or representational state transfer architectural style.It is an interface that two computer systems use to exchange information securely over the internet.
+   The most common scenario of using REST APIs is to deliver static resource representations in JSON.
+    </p>
+
+
+  </div>
+
+   
+
+  </div>
+
+
+  
+</body>
+</html>
